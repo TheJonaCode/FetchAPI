@@ -57,6 +57,8 @@ function consultarAPI(ciudad,pais) {
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
 
+    Spinner(); //MUESTRA EL SPINNER
+
     fetch(url)
         .then(respuesta => respuesta.json())
         .then( datos => {
@@ -111,4 +113,23 @@ function limpiarHTML(){
     while(resultado.firstChild){
         resultado.removeChild(resultado.firstChild);
     }
+}
+
+function Spinner(){
+
+    limpiarHTML();
+    
+    const divSpinner = document.createElement('div');
+    divSpinner.classList.add('sk-chase');
+
+    divSpinner.innerHTML= `
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    `;
+
+    resultado.appendChild(divSpinner);
 }
