@@ -1,14 +1,14 @@
 [
      {
           "id" : 1,
-          "nombre" : "Juan",
-          "empresa" : "Código con Juan",
+          "nombre" : "Jonathan",
+          "empresa" : "Programando en la UTT",
           "trabajo" : "Desarrollador Web"
      },
      {
           "id" : 2,
           "nombre" : "Alejandra",
-          "empresa" : "Código con Juan",
+          "empresa" : "Código en la cuerentena",
           "trabajo" : "Diseñadora"
      },
      {
