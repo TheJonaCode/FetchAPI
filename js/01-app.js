@@ -13,6 +13,7 @@ function obtenerDatos() {
             console.log(respuesta.statusText);
             console.log(respuesta.url);
             console.log(respuesta.type);
+            console.log(holi);
 
             return respuesta.text()
         })

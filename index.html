@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos API</title>
+    <title>Uso de API's</title>
+
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Estilos CSS-->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <ul class="list-group list-group-horizontal-md lista">
-        <li class="list-group-item">
-            <button onclick="location.href='index1.html'" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Fetch API">
+    <!--
+ <button onclick="location.href='index1.html'" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Fetch API">
             Fetch API
           </button>
-        </li>
-        <li class="list-group-item">
-            <button onclick="location.href='index2.html'"type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Consultar el clima">
+    <button onclick="location.href='index2.html'" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Consultar el clima">
                 Clima
               </button>
-        </li>
-        <li class="list-group-item">
-            <button onclick="location.href='index3.html'" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Buscar letra de canciones">
+
+    <button onclick="location.href='index3.html'" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Buscar letra de canciones">
                 Buscar Letra
               </button>
-        </li>
-      </ul>
+-->
+    <div class="card__main">
+        <div class="card card__element" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Fetch_API</h5>
+                <p class="card-text">Práctica de Fetch_API utilizando Java Script</p>
+                <a href="fetch_api.html" class="card-link">Ver página</a>
+            </div>
+        </div>
+
+        <div class="card card__element" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Consultar clima</h5>
+                <p class="card-text">Uso de API para ver clima de la ciudad ingresada</p>
+                <a href="clima_api.html" class="card-link">Ver página</a>
+            </div>
+        </div>
+
+        <div class="card card__element" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Buscador de canciones</h5>
+                <p class="card-text">Uso de API para ver la letra de la canción ingresada</p>
+                <a href="lyrics_api.html" class="card-link">Ver página</a>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
