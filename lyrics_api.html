@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buscador de Letras - JSModerno</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <!--Fuente de letra-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <!--Estilos CSS-->
     <link rel="stylesheet" href="css/stylecanciones.css">
 </head>
+
 <body>
-
+    <button type="button" class="btn btn__back btn-danger" onclick="location.href='index.html'"> Volver </button>
     <main id="contenido" class="contenido">
-            <h1>Letras de Canciones</h1>
-            <div class="contenedor">
-                    <div id="buscar" class="buscar">
-                            <h2>Búsqueda</h2>
-                            <p>Busca por artista y nombre:</p>
-                            <p><span> * </span>Obligatorio</p>
-                            <form action="#" id="formulario-buscar">
-                                <div class="input">
-                                    <label for="artista">Artista: <span>*</span></label>
-                                    <input type="text" id="artista" placeholder="Artista">
-                                </div>
-                                <div class="input">
-                                    <label for="cancion">Canción: <span>*</span></label>
-                                    <input type="text" id="cancion" placeholder="Nombre Canción">
-                                </div>
+        <p class="note">Esta API dejó de funcionar :((</p>
+        <h1>Letras de Canciones</h1>
+        <div class="contenedor">
+            <div id="buscar" class="buscar">
+                <h2>Búsqueda</h2>
+                <p>Busca por artista y nombre:</p>
+                <p><span> * </span>Obligatorio</p>
+                <form action="#" id="formulario-buscar">
+                    <div class="input">
+                        <label for="artista">Artista: <span>*</span></label>
+                        <input type="text" id="artista" placeholder="Artista">
+                    </div>
+                    <div class="input">
+                        <label for="cancion">Canción: <span>*</span></label>
+                        <input type="text" id="cancion" placeholder="Nombre Canción">
+                    </div>
 
-                                <div class="input enviar">
-                                    <input type="submit" value="Buscar">
-                                </div>
-                            </form>
+                    <div class="input enviar">
+                        <input type="submit" value="Buscar">
                     </div>
-                    
-                    <div class="letra-resultado">
-                            <h2></h2>
-                            <div id="resultado"></div>
-                    </div>
-                    <div id="mensajes"></div>
+                </form>
             </div>
+
+            <div class="letra-resultado">
+                <h2></h2>
+                <div id="resultado"></div>
+            </div>
+            <div id="mensajes"></div>
+        </div>
     </main>
 
-    
+
     <script src="js/app.js" type="module"></script>
 </body>
+
 </html>
