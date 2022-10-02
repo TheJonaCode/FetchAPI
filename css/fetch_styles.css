@@ -1,0 +1,58 @@
+html,
+body {
+    background: #f2e9e4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2e9e4, #9a8c98, #22223b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2e9e4, #9a8c98, #22223b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn__back {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.div__main {
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 13%;
+    height: 200px;
+}
+
+.description {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 130px;
+}
+
+.desc__title,
+.desc__link,
+.desc__subtitle,
+.desc__hashtag {
+    width: 100%;
+    text-align: center;
+}
+
+.desc__link,
+.desc__subtitle,
+.desc__hashtag {
+    line-height: 10px;
+}
+
+.options {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.option__first {
+    margin-left: 170px;
+}
+
+.btn__opt {
+    margin-right: 10px;
+    background-color: #4a4e69;
+    color: #fff;
+}

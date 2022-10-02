@@ -7,20 +7,20 @@ function obtenerDatos() {
     //FORMA 2
     const url = 'data/datos.txt';
     fetch(url)
-        .then( respuesta => {
+        .then(respuesta => {
             console.log(respuesta);
             console.log(respuesta.status);
             console.log(respuesta.statusText);
             console.log(respuesta.url);
             console.log(respuesta.type);
-            console.log(holi);
+            console.log(Hola);
 
             return respuesta.text()
         })
-        .then(datos =>{
+        .then(datos => {
             console.log(datos)
         })
-        .catch(error =>{
+        .catch(error => {
             console.log(error);
         })
 }
